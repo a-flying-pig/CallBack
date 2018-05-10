@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CallBack</string>
+    <string name="title_activity_device_scan">DeviceScanActivity</string>
+</resources>
