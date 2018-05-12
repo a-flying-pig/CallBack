@@ -41,6 +41,8 @@ public class BluetoothLeService extends Service {
     public final static UUID MY_UUID =
             UUID.fromString("0b9f217c-f194-4a30-9797-778158732e14");
 
+    public BluetoothLeService() {
+    }
     public BluetoothLeService(BluetoothDevice device) {
         mDevice = device;
     }

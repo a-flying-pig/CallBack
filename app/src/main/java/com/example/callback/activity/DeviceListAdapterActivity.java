@@ -75,7 +75,6 @@ public class DeviceListAdapterActivity extends ListActivity {
             }, SCAN_PERIOD);
 
             mScanning = true;
-            //mBluetoothAdapter.startLeScan(mLeScanCallback);
 
             List<ScanFilter> filters = new ArrayList<>();
 
@@ -112,7 +111,6 @@ public class DeviceListAdapterActivity extends ListActivity {
                     });
                 }
             };
-
     private ScanCallback mScanCallback = new ScanCallback() {
         @Override
         public void onScanResult(int callbackType, ScanResult result) {
@@ -139,6 +137,5 @@ public class DeviceListAdapterActivity extends ListActivity {
             Log.d(TAG, "onScanFailed errorCode: " + errorCode);
         }
     };
-
 
 }

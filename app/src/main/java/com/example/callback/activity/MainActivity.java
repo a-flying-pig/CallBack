@@ -17,11 +17,11 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 import com.example.callback.callBackInterface.StartFinishCallBackInterface;
 import com.example.callback.R;
 import com.example.callback.workClass.WorkClass;
 
-import org.w3c.dom.Text;
 
 import java.util.UUID;
 
@@ -29,6 +29,7 @@ import java.util.UUID;
  * MainActivity
  */
 public class MainActivity extends Activity implements StartFinishCallBackInterface, View.OnClickListener{
+
 
     private final String TAG = "MainActivity";
     private WorkClass workClass;

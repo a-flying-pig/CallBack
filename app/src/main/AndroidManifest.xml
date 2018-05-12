@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.callback">
 
+
     <!-- 需要蓝牙权限以及ble扫描获取权限 -->
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
@@ -33,12 +34,9 @@
             android:label="@string/title_activity_device_scan" />
         <activity android:name=".activity.DeviceListAdapterActivity" />
 
-        <service
-            android:name=".service.BluetoothLeService"
-            android:enabled="true"
-            android:exported="true" />
+        <activity android:name=".activity.DeviceControlActivity"/>
 
-        <activity android:name=".activity.DeviceControlActivity"></activity>
+        <service android:name=".service.BluetoothLeService" />
     </application>
 
 </manifest>
